@@ -10,7 +10,7 @@ public class Util {
     private static final String PASSWORD = "Qasdxcrt27";
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
-    public Connection getConnection() throws ClassNotFoundException, SQLException {
+    public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Connection connection = DriverManager.getConnection(URL, LOGIN, PASSWORD);
             Class.forName(DRIVER);
             System.out.println("We are connected");
